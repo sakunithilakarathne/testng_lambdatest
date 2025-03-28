@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="LambdaSeleniumSuite" parallel="classes" thread-count="3">
+    <test name="Chrome_Windows10">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="version" value="128.0"/>
+        <parameter name="platform" value="Windows 10"/>
+        <parameter name="url" value="https://www.lambdatest.com/selenium-playground/"/>
+        <classes>
+            <class name = "testcases.TestNGFirstTestScenario"/>
+        </classes>
+    </test>
+    <test name="Edge_macOS">
+         <parameter name="browser" value="MicrosoftEdge"/>
+         <parameter name="version" value="127.0"/>
+         <parameter name="platform" value="macOS Ventura"/>
+         <parameter name="url" value="https://www.lambdatest.com/selenium-playground/"/>
+         <classes>
+             <class name = "testcases.TestNGSecondTestScenario"/>
+         </classes>
+     </test>
+     <test name="Firefox_Windows11">
+         <parameter name="browser" value="firefox"/>
+         <parameter name="version" value="130.0"/>
+         <parameter name="platform" value="Windows 11"/>
+         <parameter name="url" value="https://www.lambdatest.com/selenium-playground/"/>
+         <classes>
+             <class name = "testcases.TestNGThirdTestScenario"/>
+         </classes>
+     </test>
+ </suite>

@@ -1,1 +1,1 @@
-# testng_lambdatest
+# LambdaTestTestNG
