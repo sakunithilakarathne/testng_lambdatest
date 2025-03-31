@@ -43,8 +43,9 @@ public class TestNGFirstTestScenario extends TestBase {
         //wait.until(driver -> ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete"));
         wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//*")));
 
-        String expectedTitle = "Selenium Grid Online | Run Selenium Test On Cloud";
         String actualText = driver.getTitle();
+        String expectedTitle = "Selenium Grid Online | Run Selenium Test On Cloud";
+
         softAssert.assertEquals(actualText, expectedTitle,"Page title validation failed");
 
         driver.findElement(By.xpath("//a[contains(text(),'Input Form Submit')]")).click();
@@ -59,25 +60,5 @@ public class TestNGFirstTestScenario extends TestBase {
 
 
 
-//    @Test
-//    public void testScenario1() {
-//        SoftAssert softAssert = new SoftAssert();
-//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-//
-//        // 1. Explicit wait for DOM elements to be available
-//        wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//*")));
-//
-//        // 2. SoftAssert for page title validation (expected to fail)
-//        softAssert.assertEquals(driver.getTitle(), "LambdaTest", "Page title validation failed");
-//
-//        // Report all assertion failures at the end
-//        softAssert.assertAll();
-//    }
-//
-//    @AfterMethod
-//    public void tearDown() {
-//        if(driver != null) {
-//            driver.quit();
-//        }
-//    }
+
 }

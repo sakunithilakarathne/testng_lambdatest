@@ -19,9 +19,9 @@ public class TestBase {
         capabilities.setCapability("browserVersion", version);
         capabilities.setCapability("platformName", platform);
         HashMap<String, Object> ltOptions = new HashMap<>();
-        ltOptions.put("user", "sakunithilakarathne96");
-        ltOptions.put("accessKey", "LT_ew11nowdmXUThoR1Cu1IgW2SwZdTf6C2xjgCib2jaoT5pUQ");
-        ltOptions.put("build", "TestNGExam_lambdatest_try2");
+        ltOptions.put("user", "sakunithilakarathne220");
+        ltOptions.put("accessKey", "LT_wIe5tQlePOfa1WVEX4x7VDFvLzVru2ykmAB7v00y8h3fTO2");
+        ltOptions.put("build", "TestNGExam_lambdatest_session2");
         ltOptions.put("name", this.getClass().getName());
         ltOptions.put("platformName", platform);
         ltOptions.put("seCdp", true);
